@@ -1,0 +1,20 @@
+{
+    "name": "contextone",
+    "version": "1.0.0",
+    "description": "application to generate summaries of books (and put them into new context) using chatgpt and save them in mongodb",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "books": "node ./src/jobs/get-books.mjs"
+    },
+    "author": "horstjahns@gmail.com",
+    "license": "ISC",
+    "dependencies": {
+        "@google-cloud/storage": "6.11.0",
+        "chatgpt": "^4.7.2",
+        "dotenv": "^16.0.3",
+        "mongodb": "^5.1.0",
+        "node-fetch": "^3.3.1",
+        "whatwg-fetch": "^3.6.18"
+    }
+}
